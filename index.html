@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>MonsterTab</title>
+</head>
+<body>
+    <!--居中显示-->
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+        }
+        body {
+            background-image: url('https://bing.img.run/uhd.php');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+    </style>
+        <!--引入Time is的接口-->
+        <div class="centered">
+            <span id="China_z43d" style="font-size:75px"></span>
+            <script src="//widget.time.is/t.js"></script>
+            <script>
+            time_is_widget.init({China_z43d:{time_format:"hours:minutes"}});
+            </script>
+        </script></h1>
+    <!--引入https://www.jinrishici.com/ 的接口-->
+        <div class="centered">
+        <p style="text-align:center;"><span=jinrishici-sentence></p>
+        <span id="jinrishici-sentence"style="font-size:23px" >正在加载今日诗词....</span>
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <!--搜索框-->
+    <!--监听键盘-->
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .centered {
+                text-align: center;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var searchInput = document.getElementById('search-box');
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        this.form.submit();
+                    }
+                });
+            });
+        </script>
+    <!--调用bing-->
+    </head>
+    <body>
+        <!--居中显示与美化-->
+        <div class="centered">
+        <style>
+        .search-box{
+          width: 600px; 
+          padding: 10px; 
+          border: 1px solid #ccc; 
+          border-radius: 20px; 
+          font-size: 16px; 
+        }
+        </style>
+        <form action="https://www.bing.com/search" method="GET" target="_blank">
+            <input type="text" class="search-box" name="q" placeholder="Search on Bing">
+        </form>
+    <!--鸣谢部分-->
+    <p>特别鸣谢：</p>
+    <p>时间由<a href="https://time.is/">Time is</a>提供支持</p>
+    <p>诗词内容由<a href="https://www.jinrishici.com/">https://www.jinrishici.com/</a>提供支持</p>
+    <!--声明-->
+    <p>本网页由Monster_LuoXiCat制作</p>
+</body>
+</html>
